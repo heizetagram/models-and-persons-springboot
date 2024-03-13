@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<div th:insert="~{home/nav :: nav}"></div>
+<h1>Index</h1>
+
+<p th:text="${id}" />
+<p th:text="${firstName}" />
+<p th:text="${lastName}" />
+
+<br>
+
+<p th:text="${anotherPerson.id}" />
+<p th:text="${anotherPerson.firstName}" />
+<p th:text="${anotherPerson.lastName}" />
+</body>
+</html>
